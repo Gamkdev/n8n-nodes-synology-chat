@@ -36,14 +36,17 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 ## Operations
 
+### Synology Chat (Action Node)
 - Send Message to any user in the Chat including rich media options.
-- Generate a list of all the available channels for the robot
-- Generate a list of all the available users for the robot
+- Generate a list of all the available channels for the robot.
+- Generate a list of all the available users for the robot.
 
-
-### Notes
-
-It can't listen for changes/responses or participate in channels (yet).
+### Synology Chat Trigger (Webhook Node)
+- Receives messages and commands from Synology Chat via **Outgoing Webhooks**.
+- Token authentication (`token` parameter validation).
+- Security allowlist for `user_id` (restricts execution to authorized users).
+- Automatic stripping of configurable trigger words (e.g. `naf:`).
+- Supports multiple response modes: immediate 200 OK with optional acknowledgement, last node response, or 'Respond to Webhook' node.
 
 By default includes the support for non-valid SSL Synology instances, [see](https://github.com/UlisesGascon/n8n-nodes-synology-chat#disable-ssl-validation)
 
@@ -86,4 +89,5 @@ This Node will help you to send messages to specific users in the chat.
 |----------|:-------------:|------:|
 | 1.0.0 |  1.0.0 | [synology-chat-communicator@1.0.0](https://github.com/UlisesGascon/synology-chat-communicator/releases/tag/v1.0.0) |
 | 1.1.0 |  1.1.0 | [synology-chat-communicator@1.1.0](https://github.com/UlisesGascon/synology-chat-communicator/releases/tag/v1.1.0) |
+| 1.2.0 |  1.1.0 | Added `SynologyChatTrigger` node (Outgoing Webhook support) and fixed `getChannels` bug |
     

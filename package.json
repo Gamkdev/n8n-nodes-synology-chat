@@ -1,18 +1,18 @@
 {
   "name": "n8n-nodes-synology-chat",
-  "version": "1.1.0",
-  "description": "N8N node for Synology Chat",
+  "version": "1.2.0",
+  "description": "N8N node and trigger for Synology Chat",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/UlisesGascon/n8n-nodes-synology-chat",
+  "homepage": "https://github.com/Gamkdev/n8n-nodes-synology-chat",
   "author": {
     "name": "Ulises Gascon"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/UlisesGascon/n8n-nodes-synology-chat.git"
+    "url": "https://github.com/Gamkdev/n8n-nodes-synology-chat.git"
   },
   "main": "index.js",
   "scripts": {
@@ -32,7 +32,8 @@
       "dist/credentials/SynologyChatApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/SynologyChat/SynologyChat.node.js"
+      "dist/nodes/SynologyChat/SynologyChat.node.js",
+      "dist/nodes/SynologyChat/SynologyChatTrigger.node.js"
     ]
   },
   "devDependencies": {

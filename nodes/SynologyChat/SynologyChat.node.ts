@@ -136,7 +136,7 @@ export class SynologyChat implements INodeType {
 					item.json['response'] = await getUsers()
 				}
 
-				if(operation === 'sendMessage'){
+				if(operation === 'getChannels'){
 					item.json['response'] = await getChannels()
 				}
 				
